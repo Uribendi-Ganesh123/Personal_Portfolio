@@ -1,0 +1,215 @@
+{% extends "sub/struct.html" %}
+{% load static %}
+{% block content %}
+
+  {% comment %} <!-- ---------------About----------------- --> {% endcomment %}
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="{% static 'blue.jpg' %}" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt nostrum omnis, consectetur similique culpa itaque unde officia rem natus provident quae impedit facere aperiam.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('fresher')">Fresher</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="skill-rating">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>HTML</p>
+                                    </div>
+                                </td>
+                                <td><div class="stars">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>CSS</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>Bootstrap</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>JavaScript</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>Python</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>Django</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="stars">
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star filled">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="skill">
+                                        <p>SQL</p>
+                                    </div>
+                                </td>
+                                <td><div class="stars">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>           
+                <div class="tab-contents" id="fresher">
+                    <ul>
+                        <li><span>Welcome to My Portfolio</span> <br>
+                            Hi, I'm Ganesh, a dedicated and enthusiastic full-stack Python developer. With a strong foundation in modern web development technologies, I specialize in building dynamic and user-friendly websites. I have successfully completed a comprehensive full-stack Python course, which equipped me with expertise in framework like Django. along with front-end tools such as HTML, CSS, JavaScript. Over time, I have honed my skills by developing multiple small-scale projects that demonstrate my creativity, problem-solving abilities, and passion for coding. My goal is to craft efficient and impactful solutions that make a difference. Explore my portfolio to see how I bring ideas to life!                
+                        </li>                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span> <br>B.Tech In Computer Science and Engineering</li>
+                        <li><span>2020</span> <br>State Board of Intermediate MPC</li>
+                        <li><span>2018</span> <br>Secondary School Certificate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="{% static "dev1.png" %}" alt="">
+                <div class="vertical-title">
+                    HTML Developer
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum possimus inventore? Temporibus quidem explicabo similique exercitationem eum suscipit consectetur minus at numquam?
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="{% static "dev1.png" %}" alt="">
+                <div class="vertical-title">
+                    HTML Developer
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum possimus inventore? Temporibus quidem explicabo similique exercitationem eum suscipit consectetur minus at numquam?
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="{% static "dev1.png" %}" alt="">
+                <div class="vertical-title">
+                    HTML Developer
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum possimus inventore? Temporibus quidem explicabo similique exercitationem eum suscipit consectetur minus at numquam?
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="{% static "dev1.png" %}" alt="">
+                <div class="vertical-title">
+                    HTML Developer
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum possimus inventore? Temporibus quidem explicabo similique exercitationem eum suscipit consectetur minus at numquam?
+                </div>
+            </div>   
+            
+        </div>
+    </section>
+</main>
+
+{% endblock content %}
+

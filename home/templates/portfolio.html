@@ -1,0 +1,43 @@
+{% extends "sub/struct.html" %}
+{% load static %}
+{% block content %}
+
+  {% comment %} <!-- --------------portfolio------------- --> {% endcomment %}
+
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="{% static 'dev.png' %}" alt="">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum neque ullam necessitatibus rerum, temporibus facilis. Ducimus neque recusandae harum ut.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>       
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static 'dev.png' %}" alt="">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum neque ullam necessitatibus rerum, temporibus facilis. Ducimus neque recusandae harum ut.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>       
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static 'dev.png' %}" alt="">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum neque ullam necessitatibus rerum, temporibus facilis. Ducimus neque recusandae harum ut.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>       
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
